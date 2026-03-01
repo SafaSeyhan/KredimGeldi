@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="KredimGeldi ile tek tıkla birçok bankaya kredi başvurusu yapın! Hızlı, güvenli ve kolay kredi başvurusu için hemen deneyin.">
+    <meta name="keywords"
+        content="kredi başvurusu, kredi karşılaştırma, en uygun kredi, hızlı kredi, banka kredileri, kredi hesaplama">
+    <meta name="author" content="KredimGeldi">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+
+    <meta property="og:title" content="KredimGeldi - Tek Tıkla Kredi Başvurusu">
+    <meta property="og:description"
+        content="Birden fazla bankaya tek tıkla kredi başvurusu yapın. En uygun kredi seçeneklerini keşfedin!">
+    <meta property="og:image" content="https://www.kredimgeldi.com/assets/images/preview.jpg">
+    <meta property="og:url" content="https://www.kredimgeldi.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KredimGeldi - Tek Tıkla Kredi Başvurusu">
+    <meta name="twitter:description" content="KredimGeldi ile hızlı ve kolay kredi başvurusu yapın!">
+    <meta name="twitter:image" content="https://www.kredimgeldi.com/assets/images/preview.jpg">
+    <meta name="twitter:site" content="@KredimGeldi">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon_finto.css">
+    <link rel="stylesheet" href="assets/css/scrollCue.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>KredimGeldi</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <div class="preloader-area text-center position-fixed top-0 bottom-0 start-0 end-0" id="preloader">
+        <div class="loader position-absolute start-0 end-0">
+            <img src="assets/images/favicon.png" alt="favicon" class="img-fluid" style="width: 70px; height: 70px;">
+            <div class="wavy position-relative fw-light">
+                <span class="d-inline-block"></span>
+                <span class="d-inline-block">K</span>
+                <span class="d-inline-block">R</span>
+                <span class="d-inline-block">E</span>
+                <span class="d-inline-block">D</span>
+                <span class="d-inline-block">I</span>
+                <span class="d-inline-block">M</span>
+                <span class="d-inline-block">G</span>
+                <span class="d-inline-block">E</span>
+                <span class="d-inline-block">L</span>
+                <span class="d-inline-block">D</span>
+                <span class="d-inline-block">I</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="header-placeholder"></div>
+
+    <!-- End Navbar Area -->
+    <div class="mobile-navbar offcanvas offcanvas-end border-0" data-bs-backdrop="static" tabindex="-1"
+        id="navbarOffcanvas">
+
+    </div>
+
+    <div id="videoContainer">
+        <video id="videoPlayer" autoplay muted playsinline></video>
+        <div id="loadingIndicator" class="loading">Loading video...</div>
+    </div>
+
+
+    <div class="identification-modal modal fade" id="identificationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- <div class="modal-header position-relative">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                </div> -->
+                <div class="modal-body"
+                    style="background-color: #fdfbe9; padding: 20px; border-radius: 30px; text-align: center;">
+                    <!-- Logo -->
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <a class="navbar-brand logo-brand p-0 text-center" href="index.html">
+                            <img src="assets/images/logo.png" alt="Kredim Geldi"
+                                style="width: 200px; pointer-events: none;">
+                        </a>
+                    </div>
+
+                    <!-- Title -->
+                    <h4 style="margin-top: 15px; font-weight: bold;">Kimlik Bilgilerin İle Hemen Başvur</h4>
+
+                    <!-- Form -->
+                    <form class="popup-form"
+                        style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 15px;">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" class="form-control" placeholder="İsim" style="flex: 1;">
+                            <input type="text" class="form-control" placeholder="Soyisim" style="flex: 1;">
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" class="form-control" placeholder="T.C. No." style="flex: 1;">
+                            <input type="text" class="form-control" placeholder="Doğum Tarihi" style="flex: 1;">
+                        </div>
+
+                        <button type="submit" class="default-btn">Başvur <i class="ri-arrow-right-up-line"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-banner-area overflow-hidden position-relative"
+        style="background-image: url(assets/images/hero/hero-image-1.svg)">
+        <div class="container-fluid side-padding pb-100">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-12" data-cues="slideInRight" data-duration="400">
+                    <div class="main-banner-content">
+                        <h1 style="position: relative; z-index: 99;">
+                            Sana Uygun
+                            <br />
+                            <span style="position: relative; display: inline-block;">
+                                <img src="assets/images/svg/your.svg" alt="image" style="
+                                    position: absolute; 
+                                    left: 50%; 
+                                    top: 50%; 
+                                    transform: translate(-50%, -50%); 
+                                    z-index: -1;
+                                    width: 110%; /* Adjust as needed */
+                                ">
+                                <span style="position: relative; z-index: 1;">Kredi</span>
+                            </span>
+                            Fırsatlarını Hemen İncele
+                        </h1>
+
+
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-12" data-cues="slideInLeft" data-duration="400">
+                    <div class="info">
+                        <p class="resp-text-1" style="margin-top: 30px;"><strong>KredimGeldi</strong>, tüm bankaların
+                            tekliflerini tek bir platformda toplayarak başvurularınızı zahmetsizce tamamlamanızı ve
+                            süreci anlık takip etmenizi sağlıyoruz. Finansal geleceğinizi kontrol altına
+                            almanız için buradayız!
+                        </p>
+
+                        <button type="button" class="default-btn" data-bs-toggle="modal" style="width: 200px;"
+                            onclick="scrollToElement('.hero-area')">
+                            Hemen Başvur <i class="ri-arrow-right-up-line"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-area">
+            <div class="container-fluid side-padding">
+                <div class="row g-4" data-cues="slideInUp" data-duration="400" style="justify-content: center;">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div id="card-1" class="banner-card bg-color-ffffff radius-30  card-hover-effect"
+                            style="display: flex; justify-content: center; gap:10%; flex-direction: column; height: 100%; cursor: pointer;">
+                            <div class="flex-warp position-relative">
+                                <i>
+                                    <img src="assets/images/svg/grow.svg" alt="image">
+                                </i>
+                                <h3>Size Özel Kredi Kartı ve Kampanyaları İnceleyin</h3>
+                            </div>
+
+                            <div class="banner-card-body" style="border-radius: 30px; overflow: hidden;">
+                                <img src="assets/images/service/creditcard-image-1.png" alt="image"
+                                    style="border-radius: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card-2" class="col-xl-4 col-lg-6 col-md-6"
+                        style="display: flex; justify-content: center; gap:10%; flex-direction: column; height: 100%; cursor: pointer;">
+                        <div class="banner-card part-two bg-color-9edd05 radius-30 position-relative card-hover-effect">
+                            <div class="flex-warp position-relative">
+                                <i>
+                                    <img src="assets/images/svg/corporation.svg" alt="image">
+                                </i>
+                                <h3>Kredi Karnenizi Görün, Finansal Gücünüzü Keşfedin</h3>
+                            </div>
+                            <p class="mb-0">Kredi karnenizi hesaplayarak finansal durumunuzu, kredi puanınızı yükseltin
+                                ve en iyi tekliflere kolayca ulaşın.
+                            </p>
+                            <div class="banner-card-image">
+                                <div class="text-end">
+                                    <img src="assets/images/service/service-image-2.png" alt="image">
+                                </div>
+                            </div>
+
+                            <div class="total bg-color-ffffff radius">
+                                <h4>Kredi Notunuz</h4>
+                                <h5>+1.700</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card-3" class="col-xl-4 col-lg-6 col-md-6"
+                        style="display: flex; justify-content: center; gap:10%; flex-direction: column;  cursor: pointer;">
+                        <div class="banner-card part-three bg-color-ffffff radius-30 position-relative card-hover-effect"
+                            style="flex:1">
+                            <div class="flex-warp position-relative">
+                                <i>
+                                    <img src="assets/images/svg/euro.svg" alt="image">
+                                </i>
+                                <h3>Kişisel Kampanyalarınızı ve Fırsatlarınızı Kaçırmayın</h3>
+                            </div>
+                            <div class="banner-image-body">
+                                <div class="text-end">
+                                    <img class="service-image-3" src="assets/images/service/service-image-3.png"
+                                        alt="image">
+                                </div>
+                                <img class="service-image-4" src="assets/images/service/service-image-4.png"
+                                    alt="image">
+                            </div>
+                            <i class="flaticon-star-5 star-5 moveHorizontal_reverse"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Banner Area -->
+    <div class="hero-area position-relative overflow-hidden" style="padding-top: 0;">
+        <div class="container-fluid eighteen-padding position-relative bg-color-0c3a30"
+            style=" margin-top: 0px; padding-bottom: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);padding-top:60px;padding-bottom:60px">
+            <div class="hero-content">
+                <div class="hero-revenue">
+                    <div class="row g-4" data-cues="slideInUp" data-duration="400" style="margin-top: 0px;">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="feature-account radius-30 position-relative"
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; padding:0; height: 100%;">
+                                <div class="swiper-container" style="height: 100%; ">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/hero/slider-1.png" alt="Image 1"
+                                                style="width: 100%; height: 100%; object-fit: cover;" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/hero/slider-2.png" alt="Image 2"
+                                                style="width: 100%; height: 100%; object-fit: cover;" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/hero/slider-3.png" alt="Image 3"
+                                                style="width: 100%; height: 100%; object-fit: cover;" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/hero/slider-4.png" alt="Image 4"
+                                                style="width: 100%; height: 100%; object-fit: cover;" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="pricing-area">
+                                <div class="container" style="padding: 0;">
+                                    <div class="pricing-bg bg-color-edf1ee radius-30"
+                                        style="box-shadow : 0px 4px 4px 0px rgba(8, 39, 32, 0.1); display: flex; flex-direction: column; justify-content: center; align-items: baseline;">
+                                        <div
+                                            style="display: flex; gap: 24px; justify-content: center; align-items: center; width: 100%;">
+                                            <div
+                                                style="display: flex; flex-direction: column; height: 85%; justify-content: space-between;">
+                                                <div class="choose-btn" style="height: 100%;">
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist"
+                                                        style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" data-tab="ihtiyac"
+                                                                type="button">
+                                                                <span><i class="ri-check-line"></i> İhtiyaç
+                                                                    Kredisi</span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" data-tab="konut" type="button">
+                                                                <span
+                                                                    style="display: inline-block; max-width: 100%; text-align: center; font-size: 14px; line-height: 1.2;">
+                                                                    <i class="ri-check-line"
+                                                                        style="margin-right: 8px;"></i> Konut Kredisi
+                                                                </span>
+                                                            </button>
+                                                        </li>
+
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" data-tab="tasit" type="button">
+                                                                <span><i class="ri-check-line"></i> Taşıt Kredisi</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <form id="kredi-hesaplama-formu" onsubmit="handleSubmit(event)"
+                                                style="flex:1;">
+                                                <div
+                                                    style="display: flex; flex-direction: column; justify-content: center; align-items: baseline; flex: 1;">
+                                                    <div class="hesaplama-container"
+                                                        style="display:flex; flex-direction: column; width: 100%; height: 100%; justify-content: center; align-items: baseline;">
+                                                        <div
+                                                            style="margin-top: auto;width: 100%; display: flex; flex-direction: column; gap: 20px;">
+                                                            <div class="tutar-hesaplama">
+                                                                <div class="input-container"
+                                                                    style="position: relative; width: 100%;">
+                                                                    <label for="tutar"
+                                                                        class="floating-label resp-text-2"
+                                                                        style="position: absolute; right: 10px; top: 15px; font-size: 14px; color: #888;">
+                                                                        Kredi Tutarı
+                                                                    </label>
+                                                                    <span class="currency-symbol">₺</span>
+                                                                    <input type="text" id="tutar" name="tutar"
+                                                                        placeholder="Tutar" required
+                                                                        oninput="formatNumber(this)"
+                                                                        onkeypress="return isNumber(event)"
+                                                                        maxlength="8" min="10000" style="height: 50px;">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="vade-hesaplama">
+                                                                <div class="input-container"
+                                                                    style="position: relative; width: 100%;">
+                                                                    <label for="vade" class="floating-label resp-text-2"
+                                                                        style="position: absolute; right: 10px; top: 15px; font-size: 14px; color: #888;">
+                                                                        Vade
+                                                                    </label>
+                                                                    <span class="currency-symbol">Ay</span>
+                                                                    <input type="number" id="vade" name="vade" min="1"
+                                                                        max="36" value="12" required
+                                                                        oninput="syncSliderWithInput()"
+                                                                        style="height: 50px; width: 100%;">
+                                                                </div>
+                                                                <input type="range" id="vade-slider" min="1" max="36"
+                                                                    step="1" value="12" oninput="syncInputWithSlider()"
+                                                                    style="width: 100%;">
+                                                            </div>
+                                                        </div>
+
+                                                        <input type="submit" class="default-btn" id="hesapla-btn"
+                                                            style="margin-top: auto;" value="Hesapla">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-12 col-md-12">
+                            <div class="feature-provide bg-color-ffffff radius-30" style="height: 100%;">
+                                <h3 class="resp-text-1">Kredini Akıllıca Seç, Geleceğini Güvenceye Al</h3>
+                                <span style="font-size: small;">Finansal kararlarınızı hızlı, güvenli ve bilinçli bir
+                                    şekilde vermek artık çok
+                                    daha kolay! <strong>KredimGeldi</strong>, en uygun kredi ve finansal ürünleri
+                                    tek
+                                    bir platformda
+                                    karşılaştırmanızı sağlar. Bankalara ayrı ayrı başvuru yaparak vakit kaybetmenize
+                                    gerek yok - biz sizin için en avantajlı teklifleri topluyor, şeffaf ve anlık
+                                    başvuru
+                                    süreciyle güvenli bir finansal yolculuk sunuyoruz.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12">
+                            <div class="feature-account bg-color-9edd05 radius-30 position-relative" style="padding:0px;display: flex;
+                                align-items: center;
+                                overflow: hidden;
+                                ">
+                                <div id="feature-account-info" style="padding:50px">
+
+                                    <h3 class="resp-text-1">Sana Uygun Kredi Tekliflerini Hemen Gör</h3>
+                                    <ul>
+                                        <li>
+                                            <h4 class="resp-text-2">İstediğin Kredi Tutarını Gir</h4>
+                                        </li>
+                                        <li>
+                                            <h4 class="resp-text-2">Vade Oranını Seç</h4>
+                                        </li>
+                                        <li>
+                                            <h4 class="resp-text-2"> Sana Özel Teklifleri Gör</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div style="display: flex; align-items: center; min-height: 200px;">
+                                    <img class="hero-image-2" src="assets/images/hero/sanauygunkrediteklifleri.png"
+                                        alt="image" style="display: block;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Area -->
+
+    <!-- Start Features Area -->
+    <div class="features-area ptb-120">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kampanyalar</h2>
+            </div>
+            <div class="row g-4" data-cues="slideInUp" data-duration="400" style="justify-content: center;flex:1;">
+                <div class="col-lg-6 col-md-6">
+                    <div class="bg-color-fffaeb-grad radius-30 position-relative bank-card"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 25px;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                        <img class="app-image-3" src="assets/images/brands/akbank/akbank_logo.png" alt="image"
+                            style="height: 30px; transform: scale(0.6);">
+                        <div class="divider"
+                            style="width: 100%; height: 1px; background-color: #969696; margin: 20px 0;"></div>
+
+                        <h4>%0 Faizli 55.000 TL'ye varan nakit fırsatı! </h4>
+                        <p class="resp-text-2" style="margin-top: 30px; text-align: center;">30.000 TL 6 ay vadeli
+                            ihtiyaç kredisi ve 25.000
+                            TL 3 ay vadeli taksitli avans.</p>
+                        <a href="https://www.akbank.com/basvuru/mobileappservice/#" class="default-btn two"
+                            style="width: 70%; margin-top: auto; margin-top: 30px; text-align:center;">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="bg-color-fffaeb-grad radius-30 position-relative bank-card"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 25px;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); ">
+                        <img class="app-image-3" src="assets/images/brands/garanti/garanti_logo.png" alt="image"
+                            style="height: 30px;transform: scale(1.2); ">
+                        <div class="divider"
+                            style="width: 100%; height: 1px; background-color: #969696; margin: 20px 0;"></div>
+
+                        <h4>Faizsiz 25.000 TL Fırsatı</h4>
+                        <p class="resp-text-2" style="margin-top: 30px; text-align: center;">Bonus Gold'a hemen
+                            başvurun,
+                            25.000 TL'ye varan faizsiz ve masrafsız Taksitli Nakit Avans fırsatından faydalanın! İlk
+                            kez
+                            Bonuslu olanlara özel!</p>
+                        <a href="https://www.bonus.com.tr/kredi-karti-basvurusu?SourceCode=5C062036"
+                            class="default-btn two"
+                            style="width: 70%; margin-top: auto; margin-top: 30px;  text-align:center;">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="bg-color-fffaeb-grad radius-30 position-relative bank-card"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 25px;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                        <img class="app-image-3" src="assets/images/brands/ziraat/ziraatlogo.svg" alt="image"
+                            style="height: 30px;transform: scale(7); ">
+                        <div class="divider"
+                            style="width: 100%; height: 1px; background-color: #969696; margin: 20px 0;"></div>
+
+                        <h4>5.000 TL Bankkart Lira</h4>
+                        <p class="resp-text-2" style="margin-top: 30px; text-align: center;">Ziraat Mobil ile Ziraat
+                            Süper Şube müşterisi olun, 5.000 TL Bankkart Lira kazanın ve tüm avantajlardan faydalanmaya
+                            başlayın!</p>
+                        <a href="https://www.ziraatbank.com.tr/tr/kampanyalar/ziraat-mobil-musteri-avantajlar"
+                            class="default-btn two"
+                            style="width: 70%; margin-top: auto; margin-top: 30px;  text-align:center;">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="bg-color-fffaeb-grad radius-30 position-relative bank-card"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 25px;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                        <img class="app-image-3" src="assets/images/brands/qnb/QNBFinansbank.svg" alt="image"
+                            style="height: 30px; ">
+                        <div class="divider"
+                            style="width: 100%; height: 1px; background-color: #969696; margin: 20px 0;"></div>
+
+                        <h4>%42.50'ye Varan Faizi Fırsatı</h4>
+                        <p class="resp-text-2" style="margin-top: 30px; text-align: center;">Size özel faiz oranları ile
+                            vadesiz ve vadelinin avantajlarını bir arada sunan fırsattan yararlanın, %42.50’ye varan
+                            tanışma faizi ve kişiye özel avantajlarla kazanmaya başlayın!</p>
+                        <a href="https://www.qnb.com.tr/kazandiran-gunluk-hesap" class="default-btn two"
+                            style="width: 70%; margin-top: auto; margin-top: 30px;  text-align:center;">Hemen
+                            Başvur</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="financial-about-area ptb-120 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div id="advandages-logo" class="col-lg-3 col-md-3 col-sm-3" data-cues="slideInRight"
+                    data-duration="400" data-disabled="true">
+                    <div class="about-image position-relative" data-cue="slideInRight" data-duration="400"
+                        data-show="true"
+                        style="animation-name: slideInRight; animation-duration: 400ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        <img class="app-image-6" src="assets/images/hero/kredingeldiavantajları.png" alt="image">
+                    </div>
+                </div>
+                <div id="advandages-text" class="col-lg-9 col-md-9 col-sm-9" data-cues="slideInLeft" data-duration="400"
+                    data-disabled="true" style="display: flex;justify-content: end;">
+                    <div class="financial-about-content" data-cue="slideInLeft" data-duration="400" data-show="true"
+                        style="animation-name: slideInLeft; animation-duration: 400ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both; margin-left:0px">
+                        <div class="section-heading">
+                            <h2>KredimGeldi Avantajları</h2>
+                            <p class="resp-text-1" style="margin-top: 30px;"><strong>KredimGeldi</strong>, tüm bankaları
+                                tek platformda buluşturarak şeffaf ve hızlı hizmet, en iyi
+                                faiz oranları, kolay başvuru ve güvenli altyapı avantajlarıyla finansalözgürlüğünüze
+                                ulaşmanızı sağlıyor.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <ul class="check">
+                                    <li>
+                                        <i class="ri-check-line"></i>
+                                        <strong class="resp-text-2">Tüm bankalar tek platformda</strong>
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i>
+                                        <strong class="resp-text-2">Şeffaf ve hızlı</strong>
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i>
+                                        <strong class="resp-text-2">En iyi faiz oranları</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <ul class="check">
+                                    <li>
+                                        <i class="ri-check-line"></i>
+                                        <strong class="resp-text-2">Kolay başvuru</strong>
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i>
+                                        <strong class="resp-text-2">Güvenli altyapı</strong>
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i>
+                                        <strong class="resp-text-2">Finansal özgürlüğünü yakala</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="biz-kimiz.html" class="default-btn two mt-5">Daha Fazla Bilgi <i
+                                class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partner-area two bg-color-edf1ee ptb-120 overflow-hidden">
+        <div class="container">
+            <div class="title">
+                <h2 style="text-align: center; margin-bottom: 50px;">ÇALIŞTIĞIMIZ BANKALAR</h2>
+            </div>
+            <div class="partner-items">
+                <div class="swiper partner-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="partner-logo">
+                                <img src="assets/images/brands/akbank/akbank_logo.png" alt="image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partner-logo">
+                                <img src="assets/images/brands/garanti/garanti_logo.png" alt="image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partner-logo">
+                                <img src="assets/images/brands/isbankasi/isbankası.svg" alt="image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partner-logo">
+                                <img src="assets/images/brands/qnb/QNBFinansbank.svg" alt="image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partner-logo">
+                                <img src="assets/images/brands/ziraat/ziraatlogo.svg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-services-area ptb-120 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4" data-cues="slideInRight" data-duration="400">
+                    <div class="section-heading mb-0">
+                        <!-- <span class="sub-title">OUR SERVICES</span> -->
+                        <h2>Hizmetlerimiz </h2>
+                        <p class="mb-5 resp-text-1">Finansal ihtiyaçlarınıza en uygun çözümleri sunarak, size güvenilir
+                            ve hızlı bir
+                            deneyim sağlamayı hedefliyoruz.</p>
+                        <a href="services.html" class="default-btn two">Detaylar <i
+                                class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="row g-4" data-cues="slideInUp" data-duration="400">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-services-card bg-color-fffaeb radius-30"
+                                style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                                <h3>
+                                    <a href="service-details.html">Kredi Karnesi</a>
+                                </h3>
+                                <p>Finansal geçmişinizi değerlendirerek kredi başvurularınızda avantaj elde etmenizi
+                                    sağlayan kişisel finansal durum analizi sunar.</p>
+                                <div class="flex-warp d-flex align-items-center justify-content-between">
+                                    <i class="flaticon-mission mission"></i>
+                                    <a href="service-details.html" class="arrow-btn"><i
+                                            class="ri-arrow-right-up-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-services-card bg-color-fffaeb radius-30"
+                                style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                                <h3>
+                                    <a href="service-details.html">Kredi Kartı</a>
+                                </h3>
+                                <p>Esnek ödeme seçenekleri, avantajlı kampanyalar ve ödül programlarıyla günlük
+                                    alışverişlerinizi kolaylaştırır.
+                                </p>
+                                <div class="flex-warp d-flex align-items-center justify-content-between">
+                                    <i class="flaticon-online-meeting mission"></i>
+                                    <a href="service-details.html" class="arrow-btn"><i
+                                            class="ri-arrow-right-up-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-services-card bg-color-fffaeb radius-30"
+                                style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                                <h3>
+                                    <a href="service-details.html">Sigorta</a>
+                                </h3>
+                                <p>Yaşamın belirsizliklerine karşı kapsamlı risk yönetimi ve özel poliçe seçenekleri
+                                    sunarak sizi güvence altına alır.</p>
+                                <div class="flex-warp d-flex align-items-center justify-content-between">
+                                    <i class="flaticon-corporation mission"></i>
+                                    <a href="service-details.html" class="arrow-btn"><i
+                                            class="ri-arrow-right-up-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-services-card bg-color-fffaeb radius-30"
+                                style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+                                <h3>
+                                    <a href="service-details.html">Mevduat</a>
+                                </h3>
+                                <p>Paranızı korurken kazancınızı artırmanıza yardımcı olan rekabetçi faiz oranları
+                                    ve
+                                    güvenilir yatırım fırsatları sunar.</p>
+                                <div class="flex-warp d-flex align-items-center justify-content-between">
+                                    <i class="flaticon-investor mission"></i>
+                                    <a href="service-details.html" class="arrow-btn"><i
+                                            class="ri-arrow-right-up-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Services Area -->
+
+
+
+    <!-- Start Financial Planning Area -->
+    <div class="financial-planning-area overflow-hidden">
+        <div class="container-fluid eighteen-padding bg-color-edf1ee ptb-120 radius-30">
+            <div class="container">
+                <div class="about-top mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7" data-cues="slideInRight" data-duration="400">
+                            <div class="section-heading mb-0">
+                                <h2 class="mb-0">Güncel Faiz Oranları</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row g-4" data-cues="slideInUp" data-duration="400">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="planning-card bg-color-ffffff radius-30" style="padding:20px">
+                            <div class="title position-relative">
+                                <i class="flaticon-income partnership"></i>
+                                <h3>
+                                    <a href="#">İhtiyac Kredisi</a>
+
+                                    <div class="percentage-area" style="margin-top: 15px;">
+                                        <span class="percentage">2,99</span>
+                                        <span>%</span>
+                                        <!-- info icon -->
+                                    </div>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="planning-card bg-color-ffffff radius-30" style="padding:20px">
+                            <div class="title position-relative">
+                                <i class="flaticon-income partnership"></i>
+                                <h3>
+                                    <a href="#">Konut Kredisi</a>
+
+                                    <div class="percentage-area" style="margin-top: 15px;">
+                                        <span class="percentage">2,75</span>
+                                        <span>%</span>
+                                        <!-- info icon -->
+                                    </div>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="planning-card bg-color-ffffff radius-30" style="padding:20px">
+                            <div class="title position-relative">
+                                <i class="flaticon-analytic partnership"></i>
+                                <h3>
+                                    <a href="#">Taşıt Kredisi</a>
+                                    <div class="percentage-area" style="margin-top: 15px;">
+                                        <span class="percentage">2,94</span>
+                                        <span>%</span>
+                                        <!-- info icon -->
+                                    </div>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="planning-card bg-color-ffffff radius-30" style="padding:20px">
+                            <div class="title position-relative">
+                                <i class="flaticon-agreement partnership"></i>
+                                <h3>
+                                    <a href="#">Mevduat</a>
+                                    <div class="percentage-area" style="margin-top: 15px;">
+                                        <span class="percentage">53</span>
+                                        <span>%</span>
+                                        <!-- info icon -->
+                                    </div>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Financial Planning Area -->
+
+    <!-- Start Testimonial Area -->
+    <div class="reviews-area">
+        <div class="container-fluid eighteen-padding bg-color-0c3a30 ptb-120 radius-30">
+            <div class="container">
+                <div class="about-top mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7">
+                            <div class="section-heading mb-0">
+                                <!-- <span class="sub-title">TESTIMONIAL</span> -->
+                                <h2 class="text-white mb-0">Görüşler ve Değerlendirmeler</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row g-4" data-cues="slideInUp" data-duration="400">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="review-card bg-color-ffffff radius-30 position-relative">
+                            <img class="rounded-circle" src="assets/images/user/user-1.png" alt="image">
+
+                            <ul class="star">
+                                <li>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                </li>
+                            </ul>
+
+                            <p>"Tek bir platformdan tüm bankaların kredi tekliflerini karşılaştırmak inanılmaz kolay
+                                oldu. En uygun faiz oranını kısa sürede bulup başvurumu yaptım!"</p>
+
+                            <h3>Mehmet K.</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="review-card bg-color-ffffff radius-30 position-relative">
+                            <img class="rounded-circle" src="assets/images/user/user-2.png" alt="image">
+
+                            <ul class="star">
+                                <li>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                </li>
+                            </ul>
+
+                            <p>"Kredi Karnesi sayesinde finansal durumumu daha iyi analiz edebildim ve hangi krediye
+                                başvurabileceğimi öğrendim. Çok faydalı bir hizmet!"</p>
+
+                            <h3>Ayşe T.</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="review-card bg-color-ffffff radius-30 position-relative">
+                            <img class="rounded-circle" src="assets/images/user/user-4.png" alt="image">
+
+                            <ul class="star">
+                                <li>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                </li>
+                            </ul>
+
+                            <p>"Sigorta seçeneklerini tek tek araştırmak yerine burada en uygun teklifleri buldum.
+                                Hem
+                                zaman kazandım hem de bütçeme uygun bir poliçe seçtim."</p>
+
+                            <h3>Burak Y.</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="review-card bg-color-ffffff radius-30 position-relative">
+                            <img class="rounded-circle" src="assets/images/user/user-3.png" alt="image">
+
+                            <ul class="star">
+                                <li>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                    <i class="flaticon-star-2"></i>
+                                </li>
+                            </ul>
+
+                            <p>"Mevduat hesapları için en yüksek faiz oranlarını karşılaştırabildim ve paramı en iyi
+                                değerlendirebileceğim bankayı kolayca seçtim."</p>
+
+                            <h3>Elif D.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial Area -->
+
+    <!-- Start Account Area -->
+    <div class="account-area ptb-120">
+        <div class="container">
+            <div class="about-top mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="section-heading mb-0">
+                            <!-- <span class="sub-title">OPENING BANK ACCOUNT</span> -->
+                            <h2 class="mb-0">Kredi Skorunuzu Hemen Şimdi Öğrenin</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center" data-cues="slideInUp" data-duration="400">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-account bg-color-fffaeb radius-30">
+                        <div class="consumer-icon position-relative">
+                            <i class="flaticon-consumer"></i>
+                            <div class="number">01</div>
+                        </div>
+                        <h3>Bizi Instagram’da Takip Edin</h3>
+                        <p>En iyi kredi fırsatlarını kaçırmamak, finansal ipuçları almak ve özel kampanyalarımızdan
+                            haberdar olmak için Instagram hesabımızı takip edin.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-account bg-color-fffaeb radius-30">
+                        <div class="consumer-icon position-relative">
+                            <i class="flaticon-strategic-plan"></i>
+                            <div class="number">02</div>
+                        </div>
+                        <h3>Hesabınızı Oluşturun</h3>
+                        <p>Kişisel bilgilerinizi girerek dakikalar içinde güvenli bir hesap oluşturun ve finansal
+                            durumunuzu yönetin.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-account bg-color-fffaeb radius-30">
+                        <div class="consumer-icon position-relative">
+                            <i class="flaticon-advisor"></i>
+                            <div class="number">03</div>
+                        </div>
+                        <h3>Fırsatlardan Hemen Yararlanın</h3>
+                        <p>Kredi skorunuzu öğrenin, en iyi teklifleri karşılaştırın ve size özel avantajlardan
+                            faydalanmaya başlayın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Account Area -->
+
+    <!-- Start Download Our App Area -->
+    <div class="app-download-area overflow-hidden">
+        <div class="container-fluid eighteen-padding bg-color-edf1ee ptb-120 radius-30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6" data-cues="slideInRight" data-duration="400">
+                        <div class="download-image position-relative">
+                            <div class="text-center">
+                                <img class="app-image-12" src="assets/images/app/telefon.png" alt="image">
+                            </div>
+                            <img class="app-image-11 radius-30" src="assets/images/app/app-image-11.jpg" alt="image">
+                            <img class="feature-shape-1" src="assets/images/shape/feature-shape-1.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-cues="slideInLeft" data-duration="400">
+                        <div class="section-heading mb-0 ms-auto">
+                            <h2>Bizi Instagram’da Takip Edin</h2>
+                            <p class="mb-5 resp-text-1">En iyi kredi fırsatlarını kaçırmamak, finansal ipuçları almak ve
+                                özel kampanyalarımızdan haberdar olmak için Instagram hesabımızı takip edin!
+                            </p>
+                            <img src="assets/images/app/qr-code.png" alt="image" style="width:250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Download Our App Area -->
+
+    <!-- Start Advice Area -->
+    <div class="advice-revenue-area pt-120" style="padding-bottom: 30px;">
+        <div class="container-fluid">
+            <div class="advice-content">
+                <ul>
+                    <li>Senin İçin En İyi Teklif En Hızlı Çözüm</li>
+                    <li>Senin İçin En İyi Teklif En Hızlı Çözüm</li>
+                    <li>Senin İçin En İyi Teklif En Hızlı Çözüm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Advice Area -->
+
+    <!-- Start Advice Area -->
+    <div class="advice-revenue-area two">
+        <div class="container-fluid">
+            <div class="advice-content">
+                <ul>
+                    <li>En Uygun Krediyi Seç, Hayallerine Bir Adım Daha Yaklaş</li>
+                    <li>En Uygun Krediyi Seç, Hayallerine Bir Adım Daha Yaklaş</li>
+                    <li>En Uygun Krediyi Seç, Hayallerine Bir Adım Daha Yaklaş</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Advice Area -->
+
+    <!-- Start Faq Area -->
+    <div class="faq-area two ptb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5">
+                    <div class="section-heading mb-0">
+                        <!-- <span class="sub-title">FAQ</span> -->
+                        <h2>Sıkça Sorulan Sorular</h2>
+                        <p class="mb-5 resp-text-1">KredimGeldi hakkında merak ettiğiniz her şeyi bu bölümde
+                            bulabilirsiniz.
+                            Kredi
+                            başvurusu, ödeme süreçleri, kredi karnesi ve diğer hizmetlerimizle ilgili sıkça sorulan
+                            soruları yanıtlıyoruz.</p>
+                        <a href="faq.html" class="default-btn">Daha Fazla <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                    <div class="faq-content">
+                        <div class="accordion" id="accordionShould">
+                            <div class="accordion-item">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                    1. KredimGeldi Kredi Karnesi Nedir?
+                                </button>
+                                <div id="collapse20" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionShould">
+                                    <div class="accordion-body">
+                                        <p>KredimGeldi Kredi Karnesi, geçmişteki kredi ve kredi kartı ödeme
+                                            düzenini,
+                                            finansal davranışlarını ve beyan ettiğin bilgileri analiz ederek, kredi
+                                            geçmişini değerlendiren bir rapordur. Bu rapor, kredi başvurularında
+                                            karşılaşabileceğin olası riskleri belirler ve kredi puanını iyileştirmen
+                                            için sana özel tavsiyeler sunar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                                    2. İhtiyaç Kredisi Başvurusu Yaparken Nelere Dikkat Etmeliyim?
+                                </button>
+                                <div id="collapse21" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionShould">
+                                    <div class="accordion-body">
+                                        <p>İhtiyaç kredisi başvurusu yapmadan önce, farklı bankaların tekliflerini
+                                            karşılaştırarak en uygun krediyi seçmeye özen göster. Ödeme planları ve
+                                            vade
+                                            seçeneklerini değerlendirerek, rahatlıkla geri ödeyebileceğin taksit
+                                            tutarını belirle. Ayrıca, sigorta ve diğer ek ücretlerin olup olmadığını
+                                            mutlaka öğren.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                    3. Ne Kadar Taşıt Kredisi Kullanabilirim?
+                                </button>
+                                <div id="collapse22" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionShould">
+                                    <div class="accordion-body">
+                                        <p>Taşıt kredisi tutarı, ilgili yönetmelikler doğrultusunda aracın değerine
+                                            bağlı olarak değişir. Sıfır araçlarda nihai fatura bedelinin; ikinci el
+                                            araçlarda ise kasko değerinin belirli bir yüzdesi kadar kredi
+                                            kullanılabilir. 400.000 TL ve altındaki araçlar için kredi miktarı, araç
+                                            değerinin %70'ini geçemezken, 400.001 TL ile 800.000 TL arasındaki
+                                            araçlar
+                                            için %50, 800.001 TL ile 1.200.000 TL arasındaki araçlar için %30,
+                                            1.200.001
+                                            TL ile 2.000.000 TL arasındaki araçlar için ise %20 oranında kredi
+                                            kullanılabilir. Örneğin, 500.000 TL değerindeki bir araç için en fazla
+                                            250.000 TL taşıt kredisi alınabilir. Bu nedenle, taşıt kredisi
+                                            hesaplamalarında aracın nihai fatura bedeli veya kasko değeri dikkate
+                                            alınmalıdır.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                    4. Herkes Konut Kredisi Alabilir Mi?
+                                </button>
+                                <div id="collapse23" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionShould">
+                                    <div class="accordion-body">
+                                        <p>Konut kredisi, genellikle yüksek tutarlarla ve uzun vadelerle sağlanan
+                                            bir
+                                            finansman aracıdır. Bu nedenle bankalar, başvuru yapan kişilerin yaşını,
+                                            gelir düzeyini ve kredi geçmişini dikkatlice inceler. Yapılan
+                                            değerlendirmeler sonrasında, banka kredi tahsis birimi, başvurulan konut
+                                            kredisinin onaylanıp onaylanmayacağına karar verir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Faq Area -->
+
+    <div id="footer-placeholder" class="footer-area bg-color-0c3a30 pt-120">
+    </div>
+
+    <!-- Go top Btn -->
+    <div class="go-top">
+        <i class="ri-arrow-up-fill"></i>
+    </div>
+    <!-- Go top Btn End -->
+
+    <!-- JS Files -->
+
+
+    </style>
+    <script>
+        // Constants
+        const DEFAULT_VALUES = {
+            ihtiyac: { tutar: 10000, vade: 12 },
+            konut: { tutar: 100000, vade: 12 },
+            tasit: { tutar: 50000, vade: 12 }
+        };
+
+        const LOAN_LIMITS = {
+            ihtiyac: [
+                { min: 10000, max: 125000, minTerm: 6, maxTerm: 36 },
+                { min: 125001, max: 250000, minTerm: 6, maxTerm: 24 },
+                { min: 250001, max: 1000000, minTerm: 6, maxTerm: 12 }
+            ],
+            konut: [
+                { min: 100000, max: 5000000, minTerm: 12, maxTerm: 120 }
+            ],
+            tasit: [
+                { min: 50000, max: 1750000, minTerm: 12, maxTerm: 48 },
+                { min: 1750001, max: 2500000, minTerm: 12, maxTerm: 36 }
+            ]
+        };
+
+        // Utility Functions
+        function isNumber(event) {
+            const charCode = event.charCode || event.keyCode;
+            return charCode >= 48 && charCode <= 57;
+        }
+
+        function getSelectedLoanType() {
+            const activeTab = document.querySelector('.nav-link.active');
+            return activeTab ? activeTab.getAttribute('data-tab') : 'ihtiyac';
+        }
+
+        // Input Handling Functions
+        function formatNumber(input) {
+            let value = input.value.replace(/\./g, '');
+            const selectedTab = getSelectedLoanType();
+            const limits = LOAN_LIMITS[selectedTab];
+
+            if (limits) {
+                const maxLimit = Math.max(...limits.map(limit => limit.max));
+                value = Math.min(Number(value), maxLimit).toString();
+            }
+
+            let formattedValue = '';
+            let count = 0;
+
+            for (let i = value.length - 1; i >= 0; i--) {
+                count++;
+                formattedValue = value[i] + formattedValue;
+                if (count % 3 === 0 && i !== 0) {
+                    formattedValue = '.' + formattedValue;
+                }
+            }
+
+            input.value = formattedValue;
+            validateTutar(input);
+            updateLimitsBasedOnType(selectedTab);
+        }
+
+        function validateTutar(input) {
+            const value = parseFloat(input.value.replace(/\./g, ''));
+            const selectedTab = getSelectedLoanType();
+            const limits = LOAN_LIMITS[selectedTab];
+
+            if (!limits) return;
+
+            const minAmount = Math.min(...limits.map(limit => limit.min));
+
+            if (!input.value.trim()) {
+                input.setCustomValidity('Kredi tutarı boş olamaz.');
+            } else if (isNaN(value) || value < minAmount) {
+                input.setCustomValidity(`Kredi tutarı en az ${minAmount.toLocaleString('tr-TR')} TL olmalıdır.`);
+            } else {
+                input.setCustomValidity('');
+            }
+            input.reportValidity();
+        }
+
+        function validateVade(input) {
+            const tutar = parseFloat(document.getElementById('tutar').value.replace(/\./g, ''));
+            const vade = parseInt(input.value);
+            const selectedTab = getSelectedLoanType();
+
+            const limits = LOAN_LIMITS[selectedTab];
+            if (!limits) return;
+
+            let valid = false;
+            for (const limit of limits) {
+                if (tutar >= limit.min && tutar <= limit.max) {
+                    if (vade >= (limit.minTerm || 1) && vade <= limit.maxTerm) {
+                        valid = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!valid) {
+                input.setCustomValidity('Bu tutar için geçersiz vade seçimi.');
+            } else {
+                input.setCustomValidity('');
+            }
+            input.reportValidity();
+        }
+
+        // Form Handling Functions
+        function handleSubmit(event) {
+            event.preventDefault();
+            const tutar = document.getElementById('tutar').value;
+            const vade = document.getElementById('vade').value;
+            const tutarInput = document.getElementById('tutar');
+
+            validateTutar(tutarInput);
+            if (!tutarInput.checkValidity()) {
+                tutarInput.reportValidity();
+                return;
+            }
+
+            const selectedTab = getSelectedLoanType();
+            window.location.href = `products.html?type=${selectedTab}&tutar=${tutar}&vade=${vade}`;
+        }
+
+        function syncInputWithSlider() {
+            const vadeInput = document.getElementById('vade');
+            const vadeSlider = document.getElementById('vade-slider');
+            vadeInput.value = vadeSlider.value;
+            // Don't call validateVade here to prevent recursive updates
+        }
+
+        function syncSliderWithInput() {
+            const vadeInput = document.getElementById('vade');
+            const vadeSlider = document.getElementById('vade-slider');
+
+            let value = parseInt(vadeInput.value);
+            if (isNaN(value) || value < 1) {
+                value = 1;
+            } else if (value > parseInt(vadeInput.max)) {
+                value = parseInt(vadeInput.max);
+            }
+
+            vadeSlider.value = value;
+            vadeInput.value = value; // Ensure input reflects any corrections
+            // Don't call validateVade here to prevent recursive updates
+        }
+
+        function updateLimitsBasedOnType(loanType) {
+            const limits = LOAN_LIMITS[loanType];
+            const tutarInput = document.getElementById('tutar');
+            const vadeInput = document.getElementById('vade');
+            const vadeSlider = document.getElementById('vade-slider');
+
+            if (!limits) return;
+
+            const currentAmount = parseFloat(tutarInput.value.replace(/\./g, '')) || 0;
+            const applicableLimit = limits.find(limit => currentAmount >= limit.min && currentAmount <= limit.max);
+
+            if (applicableLimit) {
+                // Store current values before updating
+                const currentVade = parseInt(vadeInput.value) || 1;
+                const currentSliderValue = parseInt(vadeSlider.value) || 1;
+
+                // Update min/max values
+                vadeInput.min = applicableLimit.minTerm || 1;
+                vadeInput.max = applicableLimit.maxTerm;
+                vadeSlider.min = applicableLimit.minTerm || 1;
+                vadeSlider.max = applicableLimit.maxTerm;
+
+                // Restore values within new bounds
+                const newVade = Math.min(Math.max(currentVade, vadeInput.min), vadeInput.max);
+                const newSliderValue = Math.min(Math.max(currentSliderValue, vadeSlider.min), vadeSlider.max);
+
+                vadeInput.value = newVade;
+                vadeSlider.value = newSliderValue;
+            }
+        }
+
+        function setDefaultValues(loanType) {
+            const defaults = DEFAULT_VALUES[loanType] || DEFAULT_VALUES.ihtiyac;
+            document.getElementById('tutar').value = defaults.tutar.toLocaleString('tr-TR');
+            document.getElementById('vade').value = defaults.vade;
+            document.getElementById('vade-slider').value = defaults.vade;
+        }
+
+        // Initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set up navigation
+            let selectedTab = "ihtiyac";
+            document.querySelectorAll(".nav-link").forEach(button => {
+                button.addEventListener("click", function () {
+                    document.querySelectorAll(".nav-link").forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+                    selectedTab = this.getAttribute("data-tab");
+                    setDefaultValues(selectedTab);
+                    updateLimitsBasedOnType(selectedTab);
+                });
+            });
+            document.getElementById('vade').addEventListener('change', function () {
+                validateVade(this);
+            });
+
+            document.getElementById('vade-slider').addEventListener('change', function () {
+                const vadeInput = document.getElementById('vade');
+                vadeInput.value = this.value;
+                validateVade(vadeInput);
+            });
+            // Set background
+            document.body.style.backgroundImage = "url('assets/images/hero/new-hero-image-1.svg')";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center center";
+
+            // Set initial values
+            setDefaultValues(selectedTab);
+
+            // Set up form submission
+            document.getElementById('hesapla-btn').addEventListener('click', handleSubmit);
+
+            // Load components
+            fetch('components/mobile_navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbarOffcanvas').innerHTML = data;
+                });
+
+            fetch('components/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').insertAdjacentHTML('afterend', data);
+                });
+
+            fetch('components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        });
+    </script>
+    <style>
+        .swiper-button-next,
+        .swiper-button-prev {
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 18px;
+            color: black;
+        }
+    </style>
+
+
+
+    <script>
+
+        function scrollToElement(selector, offset = 0) {
+            const element = document.querySelector(selector);
+            if (element) {
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: elementPosition + offset,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 1,
+            autoplay: {
+                delay: 3000,
+            },
+            effect: 'slide',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function () {
+                    this.el.style.overflow = 'hidden';
+                }
+            }
+        });
+
+
+        function adjustLayout() {
+            const logo = document.getElementById('advandages-logo');
+            const text = document.getElementById('advandages-text');
+
+            if (window.innerWidth < 576) {
+                logo.style.width = '30%';
+                text.style.width = '70%';
+            } else {
+                logo.style.width = '';
+                text.style.width = '';
+            }
+        }
+
+        // Run the function on page load and window resize
+        window.addEventListener('resize', adjustLayout);
+        window.addEventListener('load', adjustLayout);
+
+        const card1 = document.getElementById('card-1');
+        card1.style.cursor = 'pointer';
+        const card2 = document.getElementById('card-2');
+        card2.style.cursor = 'pointer';
+        const card3 = document.getElementById('card-3');
+        card3.style.cursor = 'pointer';
+
+
+        // card 3 click goes to login.html
+        card3.addEventListener('click', function () {
+            window.location.href = 'login.html';
+        });
+
+        // card 2 goes to  service-details.html?type=kredi-karnesi
+        card2.addEventListener('click', function () {
+            window.location.href = 'service-details.html?type=kredi-karnesi';
+        });
+
+        // card 1 scrolls to class features-area
+        card1.addEventListener('click', function () {
+            scrollToElement('.features-area', -100);
+        });
+    </script>
+
+    <style>
+        .input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .input-container span.currency-symbol {
+            width: fit-content;
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            color: #aaa;
+            transition: all 0.3s ease;
+        }
+
+        .input-container input,
+        .input-container select {
+            width: 100%;
+            padding: 10px 10px 10px 38px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .input-container select {
+            padding-left: 10px;
+        }
+
+        .floating-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .currency-symbol {
+            position: relative;
+            top: 24px !important;
+            font-weight: bold;
+            margin-right: 5px;
+            color: #333;
+        }
+
+        #vade-slider {
+            width: 100%;
+            accent-color: #007bff;
+            margin-top: 8px;
+        }
+
+        .pricing-area,
+        .pricing-area .container,
+        .pricing-area .pricing-bg {
+            height: 100%;
+        }
+
+        .pricing-area .nav-item {
+
+            width: 150px;
+            padding: 0;
+        }
+
+        .pricing-area .nav-item .nav-link {
+            height: 85px;
+        }
+
+
+        .pricing-area .nav-item .nav-link span {
+            font-size: smaller !important;
+        }
+
+        .choose-btn .nav-tabs .nav-item .nav-link {
+            display: flex;
+            justify-content: start;
+            padding-left: 20px;
+            align-items: center;
+            width: 100%;
+            padding: 15px 15px;
+            height: 59px;
+            border: 1px solid #ccc;
+        }
+
+        .hero-area .container-fluid {
+            margin-top: 150px;
+            margin-bottom: 100px;
+            max-width: none !important;
+        }
+
+        .hero-area .container-fluid {
+            padding: 120px 240px;
+        }
+
+        @media (max-width: 1458px) {
+            .hero-area .container-fluid {
+                padding: 20px !important;
+            }
+        }
+
+        .main-banner-area {
+            padding-top: 100px;
+        }
+
+        .pricing-bg {
+            background-color: #f9f9f9;
+        }
+
+        /* screen is smaller than 768 remove padding */
+
+        @media (max-width: 768px) {
+            .pricing-bg {
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .pricing-bg {
+                padding: 50px 20px !important;
+            }
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* id="resp-text-1" must be font-size large when screen is larger than 768fx */
+
+
+        @media (min-width: 768px) {
+            .resp-text-1 {
+                font-size: larger !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resp-text-1 {
+                font-size: medium !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .resp-text-2 {
+                font-size: medium !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resp-text-2 {
+                font-size: small !important;
+            }
+        }
+
+
+        input {
+            width: 100%;
+            padding: 12px 12px 12px 12px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #3498db;
+            background-color: #fff;
+        }
+
+        .floating-label {
+            position: relative;
+            font-size: 16px;
+            color: #aaa;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus~.floating-label,
+        input:not(:placeholder-shown)~.floating-label {
+            top: -10px;
+            font-size: 12px;
+            color: #3498db;
+        }
+
+
+        input:focus+span {
+            color: #3498db;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .features-area {
+            padding-top: 0px;
+        }
+
+        .our-services-area,
+        .financial-planning-area {
+            padding-bottom: 90px;
+            /* Default padding for all screen sizes */
+        }
+
+        /* Media query for screens less than 768px */
+        @media (max-width: 767.98px) {
+
+            .our-services-area,
+            .financial-planning-area {
+                padding-bottom: 45px;
+                /* Adjusted padding for small screens */
+            }
+        }
+
+
+        .hero-image-2 {
+            margin-top: 0px !important;
+        }
+
+        #feature-account-info {
+            padding: 50px !important;
+        }
+
+        @media (max-width: 767.98px) {
+            #feature-account-info {
+                padding: 25px !important;
+            }
+        }
+
+
+        .main-navbar {
+            position: absolute;
+            width: 100%;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.10/dist/hls.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById('videoPlayer');
+
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const videoContainer = document.getElementById('videoContainer');
+
+            if (Hls.isSupported()) {
+                const hls = new Hls({
+                    maxBufferLength: 30,
+                    maxMaxBufferLength: 600,
+                    maxBufferSize: 60 * 1000 * 1000,
+                    maxBufferHole: 0.5,
+                    lowLatencyMode: false,
+                    enableWorker: true,
+                    startLevel: -1,
+                    abrEwmaDefaultEstimate: 500000,
+                    abrBandWidthFactor: 0.95,
+                    abrBandWidthUpFactor: 0.7,
+                    abrMaxWithRealBitrate: true
+                });
+
+                hls.loadSource('assets/videos/master.m3u8');
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    loadingIndicator.style.display = 'none';
+                    video.play().catch(error => {
+                        console.log("Autoplay blocked:", error);
+                    });
+                });
+
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                    if (data.fatal) {
+                        switch (data.type) {
+                            case Hls.ErrorTypes.NETWORK_ERROR:
+                                console.error("Network error, trying to recover");
+                                hls.startLoad();
+                                break;
+                            case Hls.ErrorTypes.MEDIA_ERROR:
+                                console.error("Media error, recovering");
+                                hls.recoverMediaError();
+                                break;
+                            default:
+                                console.error("Fatal error, cannot recover");
+                                break;
+                        }
+                    }
+                });
+
+                video.addEventListener('ended', function () {
+                    video.currentTime = 0;
+                    video.play().catch(e => console.log("Playback error:", e));
+                });
+
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                loadingIndicator.style.display = 'none';
+                video.src = 'assets/videos/master.m3u8';
+                video.addEventListener('loadedmetadata', function () {
+                    video.play().catch(error => {
+                        console.log("Autoplay blocked:", error);
+                    });
+                });
+            } else {
+                loadingIndicator.textContent = 'Your browser does not support this video format.';
+                console.error("HLS not supported in this browser");
+            }
+
+            const resizeObserver = new ResizeObserver(entries => {
+                for (let entry of entries) {
+                    const { width } = entry.contentRect;
+                    video.style.height = (width * (9 / 16)) + 'px';
+                }
+            });
+            resizeObserver.observe(videoContainer);
+
+        });
+    </script>
+    <style>
+        #videoContainer {
+            width: 100%;
+            position: relative;
+        }
+
+        #videoPlayer {
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        @media (min-width: 768px) {
+            #videoPlayer {
+                margin-top: 0px;
+            }
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .bank-card {
+            transition: transform 50ms ease, box-shadow 50ms ease;
+            height: 100%;
+            cursor: pointer;
+
+        }
+
+        .bank-card:hover {
+            box-shadow: 0px 0px bank-card 20px 0px rgba(0, 0, 0, 0.1);
+            transform: scale(1.01);
+        }
+
+        .card-hover-effect {
+            transition: transform 50ms ease, box-shadow 50ms ease;
+        }
+
+        .card-hover-effect:hover {
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transform: scale(1.01);
+        }
+    </style>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fslightbox.min.js"></script>
+    <!-- <script src="assets/js/smooth-scroll.js"></script> -->
+    <script src="assets/js/scrollCue.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
